@@ -1,0 +1,374 @@
+* 
+{
+	margin:0;
+	padding:0;
+}
+
+body
+{
+background-color:#f2fafa;
+font-family: 'Lato', sans-serif;
+font-size: 18px;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+  }
+
+a:link 
+{
+    color:#f2fafa;
+	text-decoration: none;
+}
+a:hover,a:active,a:visited 
+{
+	color:#f2fafa;
+}
+/*nawigacja*/
+.nav
+{
+	background-color: #1c74b2;
+	margin-left: 0px;
+	align-content: center;
+	padding: 10px 0px;
+	position: fixed;
+	top: 0;
+	z-index: 200;
+	
+}
+h1
+{	padding:15px 25px;
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: left;
+	margin:auto ;
+	font-size: 30px;
+	color:#000;
+	z-index: -100;
+}
+@media (max-width: 850px) {
+				.h1 {
+				display: none;
+				}
+		
+				.menu{
+			
+							
+				min-height: 18px;
+									
+			}
+			.menu > li
+			{
+				font-size: 12px;
+				display: inline-block;
+				padding: 0px 0px 5px 0px;
+				border-right: 1px dashed #0a2b42;
+				z-index: -110;
+				
+			}
+  }
+.h1
+{   position:fixed;
+	left:0;
+	top:0;
+	background-color: #1c74b2;
+	border-radius: 0pt 0pt 20pt 0pt;
+	animation:enter;
+	animation-duration: 2s;
+}
+@keyframes enter
+{
+	0%  {top: -50px}
+	70% {top: 80px}
+	100% {top: 0px}
+
+}
+.menu
+{
+	list-style-type: none;
+	margin:auto;
+	padding: 10px;
+	font-size: 18px;
+	min-height: 38px;
+	line-height: 200%;	
+	margin-right: 0;
+	position:fixed;
+	top: 0;
+	right: 0;
+	z-index: -110;
+	background-color: #1c74b2;
+	border-radius:   0pt   0pt 0pt  20pt;
+	
+}
+.menu > li
+{
+	display: inline-block;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: 1px dashed #0a2b42;
+	z-index: -110;
+	
+}
+.menu a:hover
+{
+	color: #1A237E;
+
+}
+
+/*sekcje*/
+.section 
+{
+position:relative;
+}
+h2
+{
+	font-family: 'Josefin Sans', sans-serif;
+	text-align: center;
+	font-size: 40px;
+	padding-top:70px;
+	color:#1A237E;	
+}
+h3
+{
+color:#005099;
+}
+.skills
+{
+	color: #fff;
+	background-color: #777;
+	border-radius: 25px;
+	margin: 20px auto;
+	
+	min-width: 20%;
+	max-width: 50%;
+	font-size: 1.5 em;
+}
+.skills div
+{
+	background-color: #2196F3;
+	border-radius: 25px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-style: oblique;
+	font-size: 20px;
+}
+.skillNet{	width:70%;}
+.skillSql{	width: 80%;}
+.skillHtml{	width: 60%;}
+.skillCss{	width: 60%;}
+.skillJs{	width: 30%;}
+
+.project
+{
+	background-color: #b9d5dd;
+	padding: 10px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	width: 80%;
+	text-align: center;
+	box-shadow: -2px 2px 10px 1px #00213a;
+}
+
+.img
+{
+	display: inline-block;
+	margin-left: 20px;
+	width: 110px;
+
+}
+
+.img img
+{
+	width: 90px;
+	height: 90px;
+}
+
+.txt
+{
+	display: inline-block;
+	width: 80%;
+	font-size: 15px;
+	text-align: justify;
+}
+
+.contactdivs
+{
+	width:100%;
+	text-align: center;
+	background-color: #005099	;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	margin-top: 20px; 
+	
+}
+.contactdivs div 
+{
+	width: 250px;
+	height: 120px;
+    font-size: 70px; 
+    text-align: center;
+	padding: 20px ;  
+}
+
+.email:hover
+{
+	background-color: #D44638;
+}
+.in:hover
+{
+	background-color: #0073b1;
+}
+.git:hover
+{
+	background-color: #4078c0;
+}
+.cv:hover
+{
+	background-color: #A60303;
+}
+
+/*formularz*/
+form * {
+    box-sizing: border-box;
+}
+
+.form {
+	padding-top:100px;
+    margin:3rem auto;
+    font-family:sans-serif;
+    max-width:40rem;
+}
+.form .form-row {
+    margin-bottom:1rem;
+}
+.form .form-row:last-child {
+    margin-bottom: 0;
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea,
+.form .checkbox-cnt .state {
+    box-shadow:inset 0 1px 5px rgba(0,0,0,0.07);
+}
+.form input[type=text],
+.form input[type=email],
+.form textarea {
+    border-radius:0.2rem;
+    font-family:sans-serif;
+    padding:0.8rem;
+    border:1px solid #aaa;
+    display: block;
+    width:100%;
+    color:#666;
+}
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form textarea:focus {
+    border-color:#9DC9F5;
+    box-shadow:inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0,0,0,0.07);
+    outline:none;
+}
+.form textarea {
+    height:10rem;
+}
+.form label {
+    font-weight:bold;
+    display: block;
+    font-size:0.9rem;
+    margin-bottom:0.5rem;
+}
+.form .submit-btn {
+    font-family: sans-serif;
+    padding:1rem 2rem;
+    background: #005099;
+    border:0;
+    border-radius:0.2rem;
+    color:#fff;
+    font-size:1.1rem;
+    font-weight: bold;
+    transition: 0.3s background-color;
+}
+
+/* checkbox */
+.form .submit-btn:hover {
+    background: #005099;
+}
+.form .checkbox-cnt {
+    padding-left:3rem;
+    position: relative;
+    font-weight: normal;
+    font-size:0.85rem;
+    line-height: 1.1rem;
+    color:#444;
+    cursor: pointer;
+}
+.form .checkbox-cnt .state {
+    width:2rem;
+    height: 2rem;
+    display: block;
+    position: absolute;
+    left:0;
+    top:0;
+    border:1px solid #aaa;
+    border-radius:0.2rem;
+}
+.form .checkbox-cnt .state:before {
+    width:1rem;
+    height: 1rem;
+    border-radius:0.2rem;
+    background: #005099;
+    display: block;
+    position: absolute;
+    left:50%;
+    top:50%;
+    content:'';
+    transform:translate(-50%, -50%) scale(1);
+    opacity:0;
+}
+.form .checkbox-cnt input:checked ~ .state:before {
+    animation: checkboxShowAnim 0.5s 1;
+    opacity: 1;
+}
+.form .checkbox-cnt input {
+    position:absolute;
+    top:0; left:0;
+    width:2rem;
+    height: 2rem;
+    z-index: 2;
+    cursor:pointer;
+    padding:0;
+    margin:0;
+    opacity: 0;
+}
+@keyframes checkboxShowAnim {
+    0%  { border-radius:50%; transform:translate(-50%, -50%) scale(0.2); }
+    50% { transform:translate(-50%, -50%) scale(1.2); }
+    100% { transform:translate(-50%, -50%) scale(1); }
+}
+
+/* walidacja */
+.form input[type=text].error,
+.form input[type=email].error,
+.form textarea.error,
+.form .checkbox-cnt input.error ~ .state 
+{
+border-color:#E01546;
+}
+.field-error {
+    color:#E01546;
+    padding:0.5rem 0;
+    font-size:0.8rem;
+}
+
+@media screen and (max-width:500px) {
+    .form .submit-btn {
+        display: block;
+        width: 100%;
+    }
+}
+
