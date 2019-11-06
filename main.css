@@ -4,30 +4,48 @@
 	padding:0;
 }
 
+:root
+{
+--text-color:#000;
+--text-h1-color:#1A237E;
+--text-h2-color:#1A237E;
+--text-h3-color:#005099;
+--link-color:#f2fafa;
+--link-hover:#1A237E;
+
+--bg-color:#f2fafa;
+--bg-nav-color:#1c74b2;
+--bg-article-color:#b9d5dd;
+--bg-footer-color: #005099;
+
+--color-skills: #2196F3;
+}
+
 body
 {
-background-color:#f2fafa;
+background-color:var(--bg-color,#f2fafa);
 font-family: 'Lato', sans-serif;
 font-size: 18px;
+color:var(--text-color,#000);
 }
 
 *, *::before, *::after {
 	box-sizing: border-box;
   }
 
-a:link 
+a:link, a:hover,a:active,a:visited
 {
-    color:#f2fafa;
+    color:var(--link-color,#f2fafa);
 	text-decoration: none;
 }
-a:hover,a:active,a:visited 
+.menu a:hover
 {
-	color:#f2fafa;
+	color:var(--link-hover,#1A237E);
 }
 /*nawigacja*/
 .nav
 {
-	background-color: #1c74b2;
+	background-color: var(--bg-nav-color,#1c74b2);
 	margin-left: 0px;
 	align-content: center;
 	padding: 10px 0px;
@@ -42,7 +60,7 @@ h1
 	text-align: left;
 	margin:auto ;
 	font-size: 30px;
-	color:#000;
+	color:var(--text-h1-color,#1A237E);
 	z-index: -100;
 }
 @media (max-width: 850px) {
@@ -70,7 +88,7 @@ h1
 {   position:fixed;
 	left:0;
 	top:0;
-	background-color: #1c74b2;
+	background-color:var( --bg-nav-color,#1c74b2);
 	border-radius: 0pt 0pt 20pt 0pt;
 	animation:enter;
 	animation-duration: 2s;
@@ -95,7 +113,7 @@ h1
 	top: 0;
 	right: 0;
 	z-index: -110;
-	background-color: #1c74b2;
+	background-color: var(--bg-nav-color,#1c74b2);
 	border-radius:   0pt   0pt 0pt  20pt;
 	
 }
@@ -108,11 +126,7 @@ h1
 	z-index: -110;
 	
 }
-.menu a:hover
-{
-	color: #1A237E;
 
-}
 
 /*sekcje*/
 .section 
@@ -125,11 +139,11 @@ h2
 	text-align: center;
 	font-size: 40px;
 	padding-top:70px;
-	color:#1A237E;	
+	color:var(--text-h2-color,#1A237E);	
 }
 h3
 {
-color:#005099;
+color:var(--text-h3-color,#005099)
 }
 .skills
 {
@@ -137,14 +151,13 @@ color:#005099;
 	background-color: #777;
 	border-radius: 25px;
 	margin: 20px auto;
-	
 	min-width: 20%;
 	max-width: 50%;
 	font-size: 1.5 em;
 }
 .skills div
 {
-	background-color: #2196F3;
+	background-color:var(--color-skills, #2196F3);
 	border-radius: 25px;
 	padding-left: 20px;
 	padding-top: 10px;
@@ -160,7 +173,7 @@ color:#005099;
 
 .project
 {
-	background-color: #b9d5dd;
+	background-color: var(--bg-article-color,#b9d5dd);
 	padding: 10px;
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -198,7 +211,7 @@ color:#005099;
 {
 	width:100%;
 	text-align: center;
-	background-color: #005099	;
+	background-color:var( --bg-footer-color, #005099);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
